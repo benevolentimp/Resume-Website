@@ -6,143 +6,186 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html;   charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html;   charset=utf-8">
+    <!-- CSS only Bootstrap4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
+    
     <title>Jooa Oliver Jaakkola</title>
 </head>
 
 <body>
-
-    <header>
-        <!-- TODO: Some kind of logo or something -->
-        <a class="navbar" href="index.html">
-            <h1 style="color: white; width: fit-content; float: left;">JJ</h1>
-        </a>
-        <a class="navbarRight" href="index.html">In English</a>
+    <!-- py-3 my-4 border-top-->
+    <header class="site-header sticky-top py-1 d-flex flex-wrap justify-content-between align-items-center border bg-dark">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 d-none d-md-inline-block" href="index.html"><h1 style="color: white; width: fit-content; float: left;"> JJ </h1></a>
+            <a class="py-2 d-none d-md-inline-block" href="index.html" style="color: white; width: fit-content; float: left;"> In English </a>
+        </nav>
     </header>
 
-    <div id="page-wrap">
-
-        <img src="JJ.png" alt="A portrait profile picture of me." id="pic">
-        <div id="contact-info" class="vcard">    
-            <!-- Microformats! -->
-
-            <h1 class="fn">Jooa Jaakkola</h1>
-            <p>
-                Cell: <a class="tel" href="tel:050-541-4874">050 541 48 74</a><br/>
-                Email: <a class="email" href="mailto:jaakkola.jooa@gmail.com">
-                                                     jaakkola.jooa@gmail.com</a>
-            </p>
-        </div>
-                
-        <div id="objective">
-            <p>
+    <!--INTRO-->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Jooa Jaakkola</h1>
+            <p class="lead fw-normal">
                 22-vuotias suomalainen insinööriopiskelija ja innokas ohjelmoija sekä ongelmanratkaisija.<br>
-                Olen <strong>tottelevainen, mukautuva ja rehellinen</strong> <em>optimistinen introvertti,
-                </em> 
+                Olen <strong>tottelevainen, mukautuva ja rehellinen</strong> <em>optimistinen introvertti,</em> 
                 joka tulee toimeen kaikkien kanssa, pitää muiden auttamisesta, sekä oppimisesta.
             </p>
+            <a class="btn btn-outline-secondary" href="mailto:jaakkola.jooa@gmail.com"> jaakkola.jooa@gmail.com </a>
+            <a class="btn btn-outline-secondary" href="tel:+358-50-541-4874"> 050 541 48 74 </a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block">
+            <img src="JJ.png" alt="A portrait profile picture of me." id="pic">
+        </div>
+    </div>
+    
+    <dd class="clear"></dd>
+    <dd class="clear"></dd>
+    <dd class="clear"></dd>
+    <dd class="clear"></dd>
+    
+    <!--EDUCATION + SKILLS-->
+    <div class="row align-items-md-stretch">
+        
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            
+            <h2 class="display-5">Koulutus</h2>
+            <p class="lead">
+                <em><h2>Turun ammattikorkeakoulu – 2020 ~ 2024</h2></em>
+                <p><strong>Ala: </strong>Tieto- ja viestintätekniikka<br>
+                <strong>Pääaine: </strong>Sulautetut järjestelmät & IoT</p>
+            </p>
+            <p class="lead">
+                <em><h2>Puolalanmäen lukio – 2015 ~ 2018</h2></em>
+                <p><strong>Ylioppilastodistus: </strong>C<br>
+                <strong>Liitteet: </strong>Vocabular English, Arts Diploma</p>
+            </p>
+
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
         </div>
         
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
             
-            <dt>Koulutus</dt>
-            <dd id="edu"">
-                <h2>Turun ammattikorkeakoulu - 2020-2024</h2>
-                <p><strong>Ala:</strong> Tieto- ja viestintätekniikka<br>
-                   <strong>Pääaine:</strong> Sulautetut järjestelmät & IoT</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            <dt>Taidot</dt>
-            <dd id="skill">
+            <h2 class="display-5">Taidot</h2>
+            <p class="lead">
                 <h2>Yleinen tietotekniikka</h2>
-                <p>Tunnen erittäin hyvin M365/O365, sekä näiden avoimen lähdekoodin verrokit (Word, Excel ja muut) ja <br>
-                    osaan muuten erittäin hyvin käsitellä Windows, OSX ja Linux (Suoraa kokemusta Mint, Ubuntu, Kali, Pop-os ja Fedora)</p>
+                <ul>
+                    <p>Tunnen erittäin hyvin M365/O365, sekä näiden avoimen lähdekoodin verrokit</p>
+                    <p>Muuten osaan erittäin hyvin käsitellä kaikkia käyttöjärjestelmiä: Windows, OSX tai Linux</p>
+                </ul>
                 <h2>Ohjelmointi</h2>
-                <p>
-                    Syntaksit: Python, C/C++, JavaScript, HTML/CSS ja yleinen pseudokoodi (esim. <a href="https://pseudoeditor.com/app/">Pseudoeditor</a>).<br>
-                    Muita teknologioita: Git & git-etä, useat ohjelmointi frameworkit [Django, Bootstrap, React, Flask, NodeJS (jolla tämä sivu tehty :)]
-                </p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            <dt>Työkokemus</dt>
-            <dd id="jobs">
-                <h2>Lundén Oy Ab Jalostaja <span>Elintarviketyöntekijä - 6/2022-8/2022</span></h2>
                 <ul>
-                    <p>
-                        Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Tällä kertaa, kolmantena kesänä, opin ja uskalsin vielä paremmin korjata ongelmia koneiden/robottien kanssa (ongelmia joihin ei tarvita erikoisia työkaluja, koska työskentelin tiukan hygienian alueella); sen lisäksi sain ja opin itsevarmuutta perus työelämän taitoihini.
-                        Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
-                    </p>
+                    <p>Python, C/C++, Javascript, Rust, SQL, Bash, HTML/CSS</p>
+                    <p>Myös yleinen pseudokoodi (eg. <a href="https://pseudoeditor.com/app/">Pseudoeditor</a>)</p>
+                    <p>Django, Bootstrap, React, Flask, NodeJS, ExpressJS jne.</p>
+                    <p>Muutama sekalainen taikasana, jotka myös tuttuja: git, etä-git, web-käyttöönotto, Postman (RapidAPI VSCode-lisänä), Pandas/Numpy, MongoDB, PostgreSQL</p>
                 </ul>
-                <h2>Lundén Oy Ab Jalostaja <span>Elintarviketyöntekijä - 5/2021-8/2021</span></h2>
-                <ul>
-                    <p>
-                        Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Tällä kertaa, toisena kesänä, opin ja uskalsin paremmin korjata ongelmia koneiden/robottien kanssa (ongelmia joihin ei tarvita erikoisia työkaluja, koska työskentelin tiukan hygienian alueella).
-                        Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
-                    </p>
-                </ul>
-                <h2>Lundén Oy Ab Jalostaja <span>Elintarviketyöntekijä - 3/2020-8/2020</span></h2>
-                <ul>
-                    <p>
-                        Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Ensimmäinen kesätyöni, jossa en ollut ainoastaan vuosiloman tuuraaja.
-                        Opin työskentelemään osana tiimiä ja ratkomaan käytännön ongelmia, joita ilmenin tuotantolinjastolla.
-                        Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
-                    </p>
-                </ul>
-                <h2>Lounais Suomen Tietojakelu Oy <span>-Varhaisjakelija - 6/2019-7/2019</span></h2>
-                <ul>
-                    <p>
-                        Sanomalehtien ja kirjeiden jakelua Turussa aamuyöllä. Ensimmäiset kaksi kesätyötäni (2018 & 2019), joten tärkeimpänä opin ottamaan vastuuta ja seuraamaan esihenkilöiden ohjeita.
-                    </p>
-                </ul>
-            </dd>
-            
-            <dd class="clear"></dd>
-            <dt>Kielitaito</dt>
-            <dd id="langs">
-                <ul>
-                    <h3>suomi (äidinkieli)</h3>
-                    <h3>englanti (erinomainen)</h3>
-                    <h3>ruotsi (hyvä)</h3>
-                    <h3>venäjä, viro, korea... (alkeet)</h3>
-                </ul>
-            </dd>
-            
-            <!--
-            <dd class="clear"></dd>
-            <dt>References</dt>
-            <dd id="">
-                <ul>
-                    <a href="https://linkedin.com/in/jooaoliverjaakkola">linkedin.com/in/jooaoliverjaakkola</p>
-                    <a href="https://github.com/benevolentimp">github.com/benevolentimp</p>
-                </ul>
-            </dd>
-            -->
-            
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
+            </p>
+
+          </div>
+        </div>
+    </div>
     
+    <dd class="clear"></dd>
+
+    <!--WORK XP + NATURAL LANGS-->
+    <div class="row align-items-md-stretch">
+        
+        <!--WORK XP-->
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-light rounded-3">
+            
+            <h2 class="display-5">Work Experience</h2>
+            <p class="lead">
+                <em><h2>Lundén Oy Ab Jalostaja</h2></em>
+                <h4>Elintarviketyöntekijä – 6/2022 ~ 8/2022</h4>
+                <p>
+                    Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Tällä kertaa, kolmantena kesänä, opin ja uskalsin vielä paremmin korjata ongelmia koneiden/robottien kanssa (ongelmia joihin ei tarvita erikoisia työkaluja, koska työskentelin tiukan hygienian alueella); sen lisäksi sain ja opin itsevarmuutta perus työelämän taitoihini. Pääsin tällä kertaa myös perehdyttämään uutta (ulkomaalaista) työntekijää.
+                    Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
+                </p>
+            </p>
+            <p class="lead">
+                <em><h2>Lundén Oy Ab Jalostaja</h2></em>
+                <h4>Elintarviketyöntekijä – 6/2021 ~ 8/2021</h4>
+                <p>
+                    Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Tällä kertaa, toisena kesänä, opin ja uskalsin paremmin korjata ongelmia koneiden/robottien kanssa (ongelmia joihin ei tarvita erikoisia työkaluja, koska työskentelin tiukan hygienian alueella).
+                    Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
+                </p>
+            </p>
+            <p class="lead">
+                <em><h2>Lundén Oy Ab Jalostaja</h2></em>
+                <h4>Food factory -worker – 5/2020 ~ 8/2020</h4>
+                <p>
+                    Osa elintarvikelinjaston liukuhihnaa paketoimassa kolmioleipiä. Ensimmäinen kesätyöni, jossa en ollut ainoastaan vuosiloman tuuraaja.
+                    Opin työskentelemään osana tiimiä ja ratkomaan käytännön ongelmia, joita ilmenin tuotantolinjastolla.
+                    Olin vuokratyöntekijänä Henkilöstöliiga Oy:n alla.
+                </p>
+            </p>
+            <p class="lead">
+                <em><h2>Lounais Suomen Tietojakelu Oy</h2></em>
+                <h4>Lehdenjakelija – 6/2019 ~ 7/2019</h4>
+                <p>
+                    Sanomalehtien ja kirjeiden jakelua Turussa aamuyöllä. Ensimmäiset kaksi kesätyötäni (2018 & 2019), joten tärkeimpänä opin ottamaan vastuuta ja seuraamaan esihenkilöiden ohjeita.
+                </p>
+            </p>
+            <p class="lead">
+                <em><h2>Lounais Suomen Tietojakelu Oy</h2></em>
+                <h4>Lehdenjakelija – 6/2018 ~ 7/2018</h4>
+                <p>
+                    Sanomalehtien ja kirjeiden jakelua Turussa aamuyöllä. Ensimmäiset kaksi kesätyötäni (2018 & 2019), joten tärkeimpänä opin ottamaan vastuuta ja seuraamaan esihenkilöiden ohjeita.
+                </p>
+            </p>
+
+          </div>
+        </div>
+        
+        <!--NATURAL LANGS-->
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h2 class="display-5">Other of Note</h2>
+                    <ol>
+                        <p>suomi (äidinkieli)</p>
+                        <p>englanti (erinomainen)</p>
+                        <p>ruotsi (hyvä)</p>
+                        <p>venäjä, korea, ranska, viro (alkeet)</p>
+                    </ol>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <!-- TODO: Some kind of logo or something -->
-        <a class="navbarRight" href="https://linkedin.com/in/jooaoliverjaakkola">
-            <h2>LinkedIn</h2>
-            <!--linkedin logo-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
         </a>
-        <a class="navbarRight" href="https://github.com/benevolentimp">
-            <h2>GitHub</h2>
-            <!--github logo-->
-        </a>
-    </header>
-
+        <span class="mb-3 mb-md-0 text-muted">&copy; Jooa Oliver Jaakkola</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+            <a class="text-muted" href="https://linkedin.com/in/jooaoliverjaakkola">LinkedIn
+                <svg class="bi" width="24" height="24">
+                    <use xlink:href=""/>
+                </svg>
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="https://github.com/benevolentimp">GitHub
+                <svg class="bi" width="24" height="24">
+                    <use xlink:href=""/>
+                </svg>
+            </a>
+        </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

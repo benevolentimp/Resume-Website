@@ -1,24 +1,6 @@
 * { margin: 0; padding: 0; }
 
-header {
-    background-color: #21295C;
-    height: 69px;
-    margin: 0;
-    padding-top: 33px; padding-left: 33px;
 
-    text-align: center left;
-    font: 16px Helvetica, Sans-Serif;
-}
-
-footer {
-    background-color: #1B3B6F;
-    height: 69px;
-    margin: 0;
-    padding-top: 33px; padding-left: 33px;
-
-    text-align: center left;
-    font: 16px Helvetica, Sans-Serif;
-}
 
 .navbar { color: #9EB3C2; }
 
